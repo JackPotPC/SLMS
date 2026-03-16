@@ -1,0 +1,29 @@
+{% extends 'SCS/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Поддержка{% endblock %}</title>
+    {% block extra_styles %}
+    <link rel="stylesheet" href="{% static 'css/support.css' %}">
+    {% endblock %}
+</head>
+<body>
+
+{% block content %}
+<div class="support-container">
+    <h2>Свяжитесь с нами</h2>
+    <div class="support-box">
+        <a href="https://telegram.org/" target="_blank">Telegram</a>
+    </div>
+    <div class="support-box">
+        <a href="https://vk.com/" target="_blank">VK</a>
+    </div>
+    <div class="support-box">
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>
